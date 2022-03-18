@@ -152,7 +152,7 @@ svg {
   background: center / contain no-repeat url('../images/04.png');
 }
 .chart2-box .select-item:nth-child(5) div {
-  background: #fff center / contain no-repeat url('../images/05.webp');
+  background: center / contain no-repeat url('../images/05.webp');
 }
 .chart2-box .select-item:nth-child(1) {
   order: 2;
