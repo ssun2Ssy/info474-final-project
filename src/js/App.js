@@ -140,7 +140,8 @@ function drawGenreSelectItems() {
 }
 
 function updateChart1Svg() {
-  d3.select('.chart1').style('opacity', isShowGenre ? 1 : 0);
+  d3.selectAll('.chart1 svg > g > *').style('opacity', isShowGenre ? 1 : 0);
+  d3.selectAll('.chart1 svg > g > g').style('opacity', 1);
   d3.select('.chart1 svg')
     .selectAll('.bar')
     .data(genreData)
@@ -206,8 +207,8 @@ function drawChart2() {
       .style('fill', (d) => color(d.data.company))
       .on('mouseover', function (d) {
         div.transition().duration(200).style('opacity', 0.9);
-        div.select('.company-name').text(d.company);
-        div.select('.profit').text(formatProfit(d.profit));
+        div.select('.company-name').text(d.data.company);
+        div.select('.profit').text(formatProfit(d.data.profit));
         div
           .style('left', d3.event.pageX + 'px')
           .style('top', d3.event.pageY - 28 + 'px');

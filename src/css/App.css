@@ -11,48 +11,62 @@ body {
 
 div.guess-info {
   color: #eaeaea;
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: 'Helvetica', 'Arial', sans-serif;
   margin-top: 1em;
   padding-top: 1em;
   font-size: large;
   font-weight: 100;
-  position:relative; left:320px;
+  position: relative;
+  left: 320px;
 }
 
 div.chart-title {
   color: #eaeaea;
   font-size: large;
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: 'Helvetica', 'Arial', sans-serif;
   margin-top: 1em;
   padding-top: 1em;
 }
 
-h1,h2,h3,h4,p,label {
+h1,
+h2,
+h3,
+h4,
+p,
+label {
   color: #eaeaea;
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: 'Helvetica', 'Arial', sans-serif;
   margin-top: 1em;
   padding-top: 1em;
 }
 
 h1 {
   font-size: 50px;
-  position:relative; bottom:70px; left:270px;
+  position: relative;
+  bottom: 70px;
+  left: 270px;
 }
 
 h1.compname {
-  position:relative; top:40px; left:170px;
+  position: relative;
+  top: 40px;
+  left: 170px;
 }
 
 h2 {
-  position:relative; left:130px;
+  position: relative;
+  left: 130px;
 }
 
 h3 {
-  position: relative; left: 100px; top:100px;
+  position: relative;
+  left: 100px;
+  top: 100px;
 }
 
 h4 {
-  position:relative; left:330px;
+  position: relative;
+  left: 330px;
 }
 
 svg {
@@ -138,7 +152,7 @@ svg {
   background: center / contain no-repeat url('../images/04.png');
 }
 .chart2-box .select-item:nth-child(5) div {
-  background: #fff center / contain no-repeat url('/src/images/05.webp');
+  background: #fff center / contain no-repeat url('../images/05.webp');
 }
 .chart2-box .select-item:nth-child(1) {
   order: 2;
