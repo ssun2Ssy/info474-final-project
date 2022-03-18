@@ -126,16 +126,16 @@ svg {
   height: 110px;
 }
 .chart2-box .select-item:nth-child(1) div {
-  background: center / contain no-repeat url('/src/images/01.png');
+  background: center / contain no-repeat url('../images/01.png');
 }
 .chart2-box .select-item:nth-child(2) div {
-  background: center / contain no-repeat url('/src/images/02.webp');
+  background: center / contain no-repeat url('../images/02.webp');
 }
 .chart2-box .select-item:nth-child(3) div {
-  background: center / contain no-repeat url('/src/images/03.png');
+  background: center / contain no-repeat url('../images/03.png');
 }
 .chart2-box .select-item:nth-child(4) div {
-  background: center / contain no-repeat url('/src/images/04.png');
+  background: center / contain no-repeat url('../images/04.png');
 }
 .chart2-box .select-item:nth-child(5) div {
   background: #fff center / contain no-repeat url('/src/images/05.webp');
