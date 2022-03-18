@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/d3@4.13.0/build/d3.js"
+      integrity="sha256-j2LsvgOlQFIb2Mphb+tX7d5pNmFdpsJU+s5GNo3z63g="
+      crossorigin="anonymous"
+    ></script>
+    <link href="src/css/App.css" rel="stylesheet" type="text/css" />
+    <title>DIVE INTO FILM INDUSTRY</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <h1>DIVE INTO FILM INDUSTRY</h1>
+      <div class="img-box"></div>
+
+      <div class="chart1-box">
+        <h2>Select the genre you're interested in and see how profitable it is!</h2>
+        <div class="select-box" >
+          <!-- filled by js -->
+          <!-- <div class="select-item">ACTION</div> -->
+          <!-- <div class="select-item selected">ACTION SELECTED</div> -->
+        </div>
+
+        <div class="chart1">
+          <div class="chart-title">Movies Genres vs. Net Profit</div>
+        </div>
+      </div>
+
+      <div class="chart2-box">
+        <h2>Do you know which production company take the most market share?</h2>
+
+        <div class="chart-guess">
+          <h4>TAKE A GUESS!</h4>
+          <div class="select-box" style="display: flex; margin-top: 20px;">
+            <!-- filled by js -->
+            <!-- <div class="select-item"><div></div></div> -->
+            <!-- <div class="select-item selected"><div></div></div> -->
+          </div>
+          <div class="guess-info"></div>
+        </div>
+
+        <div class="chart2">
+          <div class="tooltip">
+            <div><span class="company-name"></span></div>
+            <div><span class="profit"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chart3-box">
+        <h2>What do you know about the most profitable company?</h2>
+        <div class="chart-row">
+          <div class="left">
+            <h3>
+              The most profitable company is:
+            </h3>
+            <h1 class="compname">
+              <a href="https://en.wikipedia.org/wiki/Warner_Bros." target="_blank">Warner Bros</a>
+            </h1>
+          </div>
+
+          <div class="right" style="font-family: Arial, Helvetica, sans-serif; background-color: #e9dbbd; height: 300px; padding: 50px 30px; border-radius: 60px; line-height: 2;">
+            Warner Bros. Entertainment Inc. is an American diversified multinational mass media and entertainment conglomerate headquartered at the Warner Bros. Studios complex in Burbank, California, and a subsidiary of AT&T's WarnerMedia through its Studios & Networks division. Founded in 1923 by four brothers Harry, Albert (Abe), Sam, and Jack Warner, the company established itself as a leader in the American film industry before diversifying into animation, television, and video games, and is one of the "Big Five" major American film studios, as well as a member of the Motion Picture Association (MPA).
+          </div>
+        </div>
+      </div>
+
+      <div class="chart4">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>Net Profit of TMBD 5000 Films vs. Net Profit</h2>
+        <div class="select-row">
+          <div class="select">
+            <label>Filter by Production Company: </label>
+            <select class="company-select"></select>
+            <p> Hover over the dots to see more info!</p>
+          </div>
+        </div>
+        <div class="tooltip">
+          <div class="film-name"></div>
+          <div>companies: <span class="companies"></span></div>
+          <div>release date: <span class="release-date"></span></div>
+          <div>profit($): <span class="profit"></span></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/js/movie-data.js"></script>
+    <script src="src/js/App.js"></script>
+  </body>
+</html>
